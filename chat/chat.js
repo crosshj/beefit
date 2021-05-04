@@ -48,4 +48,5 @@ input.addEventListener("keyup", function(event) {
 		input.value = '';
 	}
 });
+
 input.focus();
