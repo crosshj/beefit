@@ -1,0 +1,48 @@
+body {
+    background-color:#88598A;
+    background-image: linear-gradient(to bottom, #888CAC, #5075A4, #2E5A95);
+    overflow: hidden;
+    color: white;
+    font-family: system-ui;
+    font-size: 25px;
+}
+
+.logo-image {
+    height: 9em;
+    width: 10em;
+    border-radius: 50%;
+}
+
+.img-container {
+    text-align: center;
+    border: 3px solid #BADA55;
+    border-radius: 5px 10px 15px 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.loading-bar {
+    background: #8ba6bc;
+    height: 0.75em;
+    width: 25em;
+    border-radius: 0.75em;
+    margin-top: 2em;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background: #0992ff;
+    transition: width .3s;
+    border-radius: .75em;
+}
+
+.loading-title {
+    font-size: 2em;
+}
