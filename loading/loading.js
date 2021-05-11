@@ -13,5 +13,5 @@ setTimeout(() => {
 }, 2000);
 
 setTimeout(() => {
-	document.location = '../chat/chat.html/::preview::/';
+	document.location = '../main/main.html/::preview::/';
 }, 2500);

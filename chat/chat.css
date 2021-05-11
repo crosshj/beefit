@@ -65,10 +65,9 @@ input, input:focus {
 }
 
 .input-box {
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
+	width: 96%;
+	margin: 1em;
+	display: block;
 	box-sizing: border-box;
 	padding: 0.5em;
 }
