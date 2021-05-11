@@ -13,5 +13,5 @@ setTimeout(() => {
 }, 2000);
 
 setTimeout(() => {
-	document.location = '../main/main.html/::preview::/';
+	document.location = '../main/main.html';
 }, 2500);
