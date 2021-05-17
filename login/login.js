@@ -30,24 +30,32 @@ function createAccountClick(){
 	const usernameInput = document.querySelector('#sign-up-username');
 	const passwordInput = document.querySelector('#sign-up-password');
 	const emailInput = document.querySelector('#sign-up-email');
-	const genderInput = document.querySelector('#sign-up-gender');
+	const genderMale = document.querySelector('#sign-up-gender-male');
+	const birthdayInput = document.querySelector('#sign-up-birthday');
 	
 	const username = usernameInput.value;
 	const password = passwordInput.value;
 	const email = emailInput.value;
-	const gender = genderInput.value;
-	const month = monthInput.value;
-	const day = dayInput.value;
-	const year = yearInput.value;
-	
-	//..
+	const gender = genderMale.checked
+		? 'male'
+		: 'female';
 
-	const dob = month + '/' + day + '/' + year;
+	const birthday = birthdayInput.value;
+
+	const response = createAccount(
+		username, email, password, gender, birthday
+	);
 	
-	createAccount(username, email, password, gender, dob);
+	if(response.success) return console.log('it worked');
+
+	const errorDiv = document.querySelector('.error');
+	errorDiv.classList.remove('hidden');
+	errorDiv.textContent = response.error;
 }
 
-const users = localStorage.getItem('users') || [];
+const users = JSON.parse(
+	localStorage.getItem('users') || '[]'
+);
 
 function createAccount(username, email, password, gender, dob){
 	const found = users.find(x => x.username === username);
