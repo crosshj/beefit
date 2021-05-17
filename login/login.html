@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+	<title>HTML Login Form</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+	<div id="sign-in" class="form-container">
+		<div class="user-img"></div>
+		<ul class="list">
+			<li>
+				<h2>BeeFit</h2>
+			</li>
+			<li><input id="username" type="text" name="User Name" placeholder="Username"></li>
+			<li><input id="password" type="password" name="Password" placeholder="........."></li>
+			<li><input type="button" name="Login" value="Login" onclick="clickHandler()">
+			<li>Doesn't have an account?</li>
+			<li onclick="showSignup()">Sign up!</li>
+		</ul>
+	</div>
+	
+	<div id="sign-up" class="form-container hidden">
+		<li><input id="username" type="text" name="User Name" placeholder="Username"></li>
+		<li><input id="email" type="text" name="email" placeholder="Email Address"></li>
+		<li><input id="password" type="password" name="Password" placeholder="Password"></li>
+		<h5> Gender </h5>
+	<label class="checkbox-inline">
+     <input type="checkbox" value="">Male
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Female
+    </label>
+		<h5> Date of Birth </h5>
+		<label for="start">Start date:</label>
+
+<input type="dob" id="dob" name="dob"
+       value="MM-DD-YYYY"
+       min="2018-01-01" max="2018-12-31">
+
+			<li><input type="button" value="Sign Up" onclick="createAccountClick()">
+	</div>
+</body>
+
+	<script src="./login.js"></script>
+
+</html>
