@@ -37,19 +37,6 @@ ul li {
 	font-size: 0.7em;
 }
 
-
-ul li a:hover{
-	background-color: #BEBE;
-	color: #000;
-}
-
-ul li.active a{
-	background-color: #FEDC56;
-	color: #000;
-}
-
-
-
 ul li:first-child {
 	background: #329096;
 	border-bottom-left-radius: 0.5em;
