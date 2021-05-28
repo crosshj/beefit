@@ -1,0 +1,73 @@
+/* TODO */
+body {
+	height: 95vh;
+	overflow: hidden;
+	color: white;
+	font-family: system-ui;
+	font-size: 25px;
+	display: flex;
+/* 	margin-top: 1.75em; */
+	background: #203a63;
+}
+.nav { margin-right: .5em}
+
+.profile-picture {
+	height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: url(profile1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 45px;
+    left: 43%;
+}
+
+.background {
+	height: 150px;
+	width:  1270px;
+	background-size: cover;
+	border-radius: 30px 30px 0px 0px ;
+	background-color:#88598A;
+	background-image: linear-gradient(to bottom, #A34378, #5075A4, #203a63);
+	
+}
+
+.profile-description {
+	height: 310px;
+	width:  1270px;
+	background-size: cover;
+	border-radius: 30px 30px 0px 0px ;
+	background-color:#88598A;
+	background-image: linear-gradient(to bottom, #A34378, #5075A4, #203a63);
+	flex: 1;
+	margin-right: 35px;
+	margin-top: -25px;
+}
+
+.profile-info h1{
+	text-align: center;
+	color: #F39DB6;
+	margin-top: 90px;
+	margin-bottom: 0;
+	font-family: poppins light;
+	
+}
+
+.profile-info h3{
+	text-align: center;
+	color: #F6D2D6;
+	margin-top: 1px;
+	margin-bottom: 1;
+	font-family: poppins light;
+	letter-spacing: 1px;
+	
+}
+
+iframe {
+	border; 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 1em;
+	
+}

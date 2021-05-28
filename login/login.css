@@ -128,3 +128,20 @@ ul li.active a{
 	background-color: #fff;
 	color: #000;
 }
+
+
+
+
+.form-container hidden{
+	width: 250px;
+	height: auto;
+	padding: 40px 30px;
+	background-color: #313f5e;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 0 #95aadb;
+	margin: auto;
+	position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+}
