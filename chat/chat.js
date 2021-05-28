@@ -10,6 +10,8 @@ https://goquotes.docs.apiary.io/#reference/list-all-datas/apiv1allquotes
 https://dmitripavlutin.com/javascript-fetch-async-await/
 */
 
+console.log(`THE CHAT MODE IS: ${window.chatMode||'default'}`)
+
 const chatHistory = document.querySelector(".chat-history");
 function addToChatHistory(msg, sender){
 	const lastChat = chatHistory.querySelector('li:last-child');
@@ -48,7 +50,5 @@ input.addEventListener("keyup", function(event) {
 		input.value = '';
 	}
 });
-
-
 
 //input.focus();

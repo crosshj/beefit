@@ -6,7 +6,7 @@ body {
 	font-family: system-ui;
 	font-size: 25px;
 	display: flex;
-/* 	margin-top: 1.75em; */
+	margin-top: 1.75em;
 	background: #203a63;
 }
 .nav { margin-right: .5em}
@@ -22,6 +22,14 @@ body {
 	border-radius: 1em;
 }
 
+.dat-contain ul li:not(.active) {
+	filter: saturate(0);
+	opacity: .5;
+}
+.dat-contain ul li:not(.active):hover {
+	filter: none;
+	opacity: 1;
+}
 ul {
 	list-style: none;
 	display: flex;
@@ -29,27 +37,12 @@ ul {
 	padding: 0; margin: 0;
 	margin-bottom: .5em;
 }
-
 ul li {
 	flex: 1;
 	background: #cc455a;
 	text-align: center;
 	font-size: 0.7em;
 }
-
-
-ul li a:hover{
-	background-color: #BEBE;
-	color: #000;
-}
-
-ul li.active a{
-	background-color: #4ff4a2;
-	color: #000;
-}
-
-
-
 ul li:first-child {
 	background: #329096;
 	border-bottom-left-radius: 0.5em;

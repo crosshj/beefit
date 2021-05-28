@@ -6,7 +6,7 @@ body {
 	font-family: system-ui;
 	font-size: 25px;
 	display: flex;
-/* 	margin-top: 1.75em; */
+	margin-top: 1.75em;
 	background: #203a63;
 }
 .nav { margin-right: .5em}
@@ -38,14 +38,13 @@ ul li {
 }
 
 
-ul li a:hover{
-	background-color: #BEBE;
-	color: #000;
+.dat-contain ul li:not(.active) {
+	filter: saturate(0);
+	opacity: .5;
 }
-
-ul li.active a{
-	background-color: #4ff4a2;
-	color: #000;
+.dat-contain ul li:not(.active):hover {
+	filter: none;
+	opacity: 1;
 }
 
 
