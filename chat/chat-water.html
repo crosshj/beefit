@@ -9,14 +9,68 @@
 		<meta name="mobile-web-app-capable" content="yes">
 		<link rel="stylesheet" href="chat.css">
 	</head>
+	
+	<style>
+		.controls {
+			display:flex;
+			background: white;
+			cursor: pointer;
+		}
+		.controls >*{
+			flex: 1;
+		}
+		.controls .button {
+			user-select: none;
+			text-align: center;
+			font-size: 3em;
+		}
+		.inc{
 
+		}
+		.submit {
+
+			border: 0;
+			background-color: transparent;
+			font-size: 2em;
+			
+		}
+		.controls input {
+			border: 0;
+			text-align: center;
+			font-size: 3em;
+			width: 2em;
+		}
+		
+		</style>
+	
+	
 	<body>
 		<ul class="chat-history">
 			<li class="bot">Hi! How many glasses of water did you drink today?</li>
 		</ul>
-		<input type="text" class="input-box"
-			placeholder="Type a question here to get started!"
-		>
+		<div class="controls">
+			<div class="dec button" onclick="minusGlass()">-</div>
+			<input class="count" type="text" value="1">
+			<div class="inc button" onclick="addGlass()">+</div>
+			<button class="submit" onclick="saveGlasses()">Save </button>
+		</div>
+		
+	<script>
+		const countDiv=document.querySelector('.count');
+		
+			console.log(countDiv)
+		function addGlass(){
+			countDiv.value=Number(countDiv.value)+
+1;
+		}
+		function minusGlass(){
+			countDiv.value-=1;
+			if(countDiv.value<0)countDiv.value=0
+		}
+		function saveGlasses(){
+			askBot('water:'+countDiv.value)
+		}
+	</script>
 	</body>
 	<script>
 		window.chatMode = 'water';

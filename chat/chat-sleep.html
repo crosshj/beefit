@@ -8,15 +8,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="mobile-web-app-capable" content="yes">
 		<link rel="stylesheet" href="chat.css">
+		<style>
+		.btn {
+			display: flex;
+			}
+		.btn > button {
+			flex: 1;
+			padding: .2em;
+			font-size: 2em;
+			}
+		</style>
+		
 	</head>
 
 	<body>
 		<ul class="chat-history">
 			<li class="bot">Hello! Are you going to sleep or waking up?</li>
 		</ul>
-		<input type="text" class="input-box"
-			placeholder="Type a question here to get started!"
-		>
+		<div class="btn"> 
+			<button onclick="askBot('sleep:wakeup');">Wake up </button> 
+			<button onclick="askBot('sleep:sleep');">Sleep </button>
+			
+		</div>
 	</body>
 	<script>
 		window.chatMode = 'sleep';

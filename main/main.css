@@ -9,11 +9,34 @@ body {
 	margin-top: 1.75em;
 	background: #203a63;
 }
-.nav { margin-right: .5em}
+.nav { margin-right: .5em; width: 20px; 
+	transition: width 0.5s;
+}
+#hamburger { position: fixed; }
+#menu {
+	height: 100%;
+	background: red;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 160px;
+	left: 0;
+	transform: translateX(-160px);
+	transition: transform 0.5s;
+}
+.nav.open { width: 160px; }
+#menu.open {
+	transform: translateX(0);
+}
 .dat-contain {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
+	margin-right: 0;
+	transition: margin-right 0.5s;
+}
+.dat-contain.pushed {
+	margin-right: -160px;
 }
 .dats-dat {
 	background-color:#88598A;
@@ -63,5 +86,4 @@ iframe {
 	width: 100%;
 	height: 100%;
 	border-radius: 1em;
-	
 }
