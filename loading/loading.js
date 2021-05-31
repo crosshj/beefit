@@ -13,5 +13,5 @@ setTimeout(() => {
 }, 2000);
 
 setTimeout(() => {
-	document.location = '../main/main.html';
+	document.location = '../login/login.html';
 }, 2500);

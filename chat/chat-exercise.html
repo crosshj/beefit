@@ -12,11 +12,17 @@
 
 	<body>
 		<ul class="chat-history">
-			<li class="bot">TODO: Exercise message...</li>
+			<li class="bot">Greetings! Would you like to exercise with me?</li>
+			<li class="me curved"> <a href="../exercise/timer.html" target="_self">START</li></a>
+			<li class="bot">Great!  Start this video and follow along!  Be sure to let me know when you stop by clicking the button below!  Let's go!</li>
+			<li class="video">
+				<iframe id="ytplayer" type="text/html" width="720" height="405"
+				src="https://www.youtube.com/embed/J4c4jv9WUDY?autoplay=1&loop=1"
+				frameborder="0" allowfullscreen>
+			
+			</li>
 		</ul>
-		<input type="text" class="input-box"
-			placeholder="Type a question here to get started!"
-		>
+	<button>START</button><button>STOP</button>
 	</body>
 	<script>
 		window.chatMode = 'exercise';
