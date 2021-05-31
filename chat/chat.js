@@ -9,7 +9,7 @@ https://www.codegrepper.com/code-examples/javascript/javascript+scroll+to+bottom
 https://goquotes.docs.apiary.io/#reference/list-all-datas/apiv1allquotes
 https://dmitripavlutin.com/javascript-fetch-async-await/
 */
-
+const proxy = 'https://api.allorigins.win/raw?url=';
 console.log(`THE CHAT MODE IS: ${window.chatMode||'default'}`)
 
 const chatHistory = document.querySelector(".chat-history");
@@ -26,9 +26,13 @@ function addToChatHistory(msg, sender){
 }
 
 async function quote(){
-	const quotesUrl = 'https://goquotes-api.herokuapp.com/api/v1/random?count=1';
-	const { quotes } = await (await fetch(quotesUrl)).json();
-	return `${quotes[0].text}\n\n-- ${quotes[0].author}`;
+// 	const quotesUrl = 'https://goquotes-api.herokuapp.com/api/v1/random?count=1';
+// 	const { quotes } = await (await fetch(quotesUrl)).json();
+// 	return `${quotes[0].text}\n\n-- ${quotes[0].author}`;
+
+	const quotesUrl = proxy+'https%3A//api.forismatic.com/api/1.0/%3Fmethod%3DgetQuote%26lang%3Den%26format%3Djson%26json%3D%3F';
+	const { quoteText, quoteAuthor } = await (await fetch(quotesUrl)).json();
+	return `${quoteText}\n\n-- ${quoteAuthor}`;
 }
 
 let timer;
