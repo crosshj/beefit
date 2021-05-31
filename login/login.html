@@ -2,56 +2,61 @@
 <html>
 
 <head>
-	<title>HTML Login Form</title>
-	<link rel="stylesheet" type="text/css" href="login.css">
+<title>HTML Login Form</title>
+<link rel="stylesheet" type="text/css" href="login.css">
 </head>
 
 <body>
-	<div id="sign-in" class="form-container">
-		<div class="user-img"></div>
-		<ul class="list">
+<div id="sign-in" class="form-container">
+	<div class="user-img"></div>
+	<ul class="list">
+		<li>
+			<h2 class="appname">BeeFit</h2>
+		</li>
+		<li><input id="username" type="text" name="User Name" placeholder="Username"></li>
+		<li><input id="password" type="password" name="Password" placeholder="........."></li>
+		<li><input type="button" name="Login" value="Login" onclick="clickHandler()">
 			<li>
-				<h2>BeeFit</h2>
-			</li>
-			<li><input id="username" type="text" name="User Name" placeholder="Username"></li>
-			<li><input id="password" type="password" name="Password" placeholder="........."></li>
-			<li><input type="button" name="Login" value="Login" onclick="clickHandler()">
-			<li>Doesn't have an account?</li>
-			<li onclick="showSignup()">Sign up!</li>
-		</ul>
-	</div>
-	
-	<div id="sign-up" class="form-container hidden">
-		<li><input id="sign-up-username" type="text" name="User Name" placeholder="Username"></li>
-		<li><input id="sign-up-email" type="text" name="email" placeholder="Email Address"></li>
-		<li><input id="sign-up-password" type="password" name="Password" placeholder="Password"></li>
-		<li>
-			<select name="cars" id="gender" value="choose one">
-				<option>---</option>
-				<option value="male">Male</option>
-				<option value="female">Female</option>
-			</select>
+			<a href="../main/main.html" target="_self">Continue as Guest
+			</a>
 		</li>
-		<li>
-			<h5> Gender </h5>
-			<label class="checkbox-inline">
-				<input type="checkbox" value="" id="sign-up-gender-male">Male
-			</label>
-			<label class="checkbox-inline">
-				<input type="checkbox" value="">Female
-			</label>
-		</li>
-		<li>
-			<h5> Date of Birth </h5>
-			<input type="date" id="sign-up-birthday" name="birthday">
-		</li>
+		<li>Doesn't have an account?</li>
+		<li onclick="showSignup()">Sign up!</li>
 
-		<li><input type="button" value="Sign Up" onclick="createAccountClick()"></li>
-			
-		<div class="error hidden"></div>
-	</div>
+	</ul>
+</div>
+
+<div id="sign-up" class="form-container hidden">
+	<li><input id="sign-up-username" type="text" name="User Name" placeholder="Username"></li>
+	<li><input id="sign-up-email" type="text" name="email" placeholder="Email Address"></li>
+	<li><input id="sign-up-password" type="password" name="Password" placeholder="Password"></li>
+	<li>
+		<select name="cars" id="gender" value="choose one">
+			<option>---</option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+		</select>
+	</li>
+	<li>
+		<h5> Gender </h5>
+		<label class="checkbox-inline">
+			<input type="checkbox" value="" id="sign-up-gender-male">Male
+		</label>
+		<label class="checkbox-inline">
+			<input type="checkbox" value="">Female
+		</label>
+	</li>
+	<li>
+		<h5> Date of Birth </h5>
+		<input type="date" id="sign-up-birthday" name="birthday">
+	</li>
+
+	<li><input type="button" value="Sign Up" onclick="createAccountClick()"></li>
+
+	<div class="error hidden"></div>
+</div>
 </body>
 
-	<script src="./login.js"></script>
+<script src="./login.js"></script>
 
 </html>

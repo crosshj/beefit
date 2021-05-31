@@ -9,8 +9,12 @@ body{
 
 h2 {
 	color: white;
-	font-family: arial;
 }
+
+.appname {
+	font-family: 'Brush Script MT', cursive;
+}
+
 
 .form-container{
 	width: 250px;
@@ -145,3 +149,4 @@ ul li.active a{
     left: 0;
     right: 0;
 }
+

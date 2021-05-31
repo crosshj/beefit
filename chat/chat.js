@@ -17,7 +17,7 @@ const waterBotMessage = (count) => {
 		return 'Oh nooo. Please drink more to stay healthy!';
 	if(count<8)
 		return "That's better! You're almost there!"
-	return `That's great! ${count} glasses! Congratulations!!! You have consumed 8 glasses of water today! Please come back again tomorrow!`
+	return `That's great! ${count} glasses! Congratulations!!! You have consumed great amount of water today! Please come back again tomorrow!`
 }
 console.log(`THE CHAT MODE IS: ${window.chatMode||'default'}`)
 
