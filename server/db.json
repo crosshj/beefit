@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "username": "pepperPea",
+      "email": "example@user.com",
+      "password": "funkyBunch12345@#",
+      "gender": "female",
+      "dob": "1969-12-13",
+      "token": "rqvjpptu09f-4o7ah1kvwsp-v5s36lh63wl-iecsvs5642-jauf8pmsson",
+      "createdAt": 1622456605045,
+      "id": 1
+    },
+    {
+      "username": "grandyGerp",
+      "email": "grandy@gerp.com",
+      "password": "naturalOceanMetaphor4576!!!",
+      "gender": "male",
+      "dob": "1961-04-03",
+      "token": "y5osjca0a4-egl4ncx1s5u-p3i4pg1r1l-vkgr1m5ube-t8iz15i8lq",
+      "createdAt": 1622456605045,
+      "id": 2
+    },
+    {
+      "username": "cyrille",
+      "email": "cy@chuju.com",
+      "password": "streetCommonBankerDudeManWow123432@@@#@",
+      "gender": "female",
+      "dob": "1900-08-27",
+      "token": "cxv4dyezkpv-vgnoypoqztd-qwmsixvbj4-rzthae71jng-jbsl90pllur",
+      "createdAt": 1622456879158,
+      "id": 3
+    }
+  ],
+  "water": [
+    {
+      "token": "rqvjpptu09f-4o7ah1kvwsp-v5s36lh63wl-iecsvs5642-jauf8pmsson",
+      "log": [
+        {}
+      ]
+    }
+  ],
+  "sleep": [
+    {
+      "token": "rqvjpptu09f-4o7ah1kvwsp-v5s36lh63wl-iecsvs5642-jauf8pmsson",
+      "log": [
+        {}
+      ]
+    }
+  ],
+  "exercise": [
+    {
+      "token": "rqvjpptu09f-4o7ah1kvwsp-v5s36lh63wl-iecsvs5642-jauf8pmsson",
+      "log": [
+        {}
+      ]
+    }
+  ]
+}
