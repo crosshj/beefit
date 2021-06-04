@@ -9,13 +9,13 @@
 	<meta name="mobile-web-app-capable" content="yes">
 	<link rel="stylesheet" href="https://unpkg.com/line-awesome@1.3.0/dist/font-awesome-line-awesome/css/all.css">
 	<link rel="stylesheet" href="main.css">
-	
+
 </head>
 
 	<style>
 
 	</style>
-	
+
 <body>
 	<div class="nav">
 		<div id="hamburger" onclick="toggleMenu()" >
@@ -28,7 +28,7 @@
 			<li>Log Out</li>
 		</ul>
 	</div>
-	
+
 
 	<div class="dat-contain">
 		<ul>
@@ -53,20 +53,10 @@
 		</div>
 	</div>
 	<script>
-		let open = false;
-		const menuDiv = document.querySelector('.nav');
-		const datContain = document.querySelector('.dat-contain');
-		function toggleMenu(){
-			open = !open;
-			if(open){
-				menuDiv.classList.add('open');
-				datContain.classList.add('pushed')
-			} else {
-				menuDiv.classList.remove('open');
-				datContain.classList.remove('pushed')
-			}
-		}
+
 	</script>
 </body>
+
+<script src="./main.js"></script>
 
 </html>
