@@ -29,6 +29,36 @@
       "token": "cxv4dyezkpv-vgnoypoqztd-qwmsixvbj4-rzthae71jng-jbsl90pllur",
       "createdAt": 1622456879158,
       "id": 3
+    },
+    {
+      "username": "cy.chuajap",
+      "email": "cyrille.chuajap@yahoo.com",
+      "password": "chocoMAN75@#",
+      "gender": "female",
+      "dob": "2000-04-21",
+      "token": "xocqatiwjxc-tiq44loh2wb-9r9950gkm5e-9un7k43x0nj-b6ir8ii1a4j",
+      "createdAt": 1622767119838,
+      "id": 4
+    },
+    {
+      "username": "Giyu",
+      "email": "giyu.demonslayer@gmail.com",
+      "password": "giyuSLAY123",
+      "gender": "male",
+      "dob": "1982-09-18",
+      "token": "zycusg7m33f-vjce936wt8b-tc6g7ixh71-8kgb30rl7r-s1pv61p53ff",
+      "createdAt": 1622767350880,
+      "id": 5
+    },
+    {
+      "username": "pete",
+      "email": "peteween@gmail,com",
+      "password": "petewiener",
+      "gender": "male",
+      "dob": "2000-12-31",
+      "token": "e0pwuq6fg4-zwjah6gh7y-0g206zbathqr-qenn9ai9jbm-89lkpljf9tn",
+      "createdAt": 1622768326284,
+      "id": 6
     }
   ],
   "water": [
