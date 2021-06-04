@@ -1,8 +1,15 @@
 /* TODO */
 
-*{margin: 0; padding: 0;}
 body{
-	background-color: #202020;
+	background-image: linear-gradient(to bottom, #A34378, #5075A4, #2E5A95);
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	margin: 0;
 }
 
 .hidden { display: none; }
@@ -20,14 +27,10 @@ h2 {
 	width: 250px;
 	height: auto;
 	padding: 40px 30px;
-	background-color: #313f5e;
+	background-color: #052733;
 	border-radius: 10px;
 	box-shadow: 0 0 10px 0 #95aadb;
 	margin: auto;
-	position: absolute;
-    top: 200px;
-    left: 0;
-    right: 0;
 }
 
 
@@ -61,21 +64,30 @@ ul.list li:nth-child(5){
 	color:#378a99;
 }
 
-ul.list li:nth-child(6){
+ul.list li:nth-child(6) span:first-child{
 	color:red;
+}
+ul.list li:nth-child(6) span:last-child:hover {
+	color: yellow;
+}
+ul.list li:nth-child(6) span:last-child {
+	color:white;
+	cursor: pointer;
+}
+
+#sign-up li {
+	list-style: none;
 }
 
 .GoBack {
-    position: absolute;
-    left: 0;
-    top: 50px;
+
 }
 
 
 header{
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: exclusion;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: exclusion;
 }
 
 ul{
@@ -114,10 +126,7 @@ ul li.active a{
 }
 
 .button{
-	position: absolute;
-	top: 72%;
-	left: 51%;
-	transform: translate(-50%, -50%);
+
 }
 
 .btn{
@@ -133,10 +142,7 @@ ul li.active a{
 	color: #000;
 }
 
-
-
-
-.form-container hidden{
+.form-container .hidden {
 	width: 250px;
 	height: auto;
 	padding: 40px 30px;
@@ -144,8 +150,43 @@ ul li.active a{
 	border-radius: 10px;
 	box-shadow: 0 0 10px 0 #95aadb;
 	margin: auto;
-	position: absolute;
-    top: 200px;
-    left: 0;
-    right: 0;
+}
+
+#sign-up * {
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+#sign-up li {
+	width: 100%;
+}
+#sign-up li + li {
+	margin-top: 1em;
+}
+#sign-up h3, h5, label {
+	color: turquoise;
+	margin-bottom: 1em;
+}
+#sign-up [type="text"],
+#sign-up [type="email"],
+#sign-up [type="password"],
+#sign-up [type="date"]
+{
+	padding: .3em;
+	width: 100%;
+}
+#sign-up input[type="radio"] {
+	margin-left: 1em;
+	margin-right: 0.5em
+}
+#sign-up .submit {
+	text-align: center;
+}
+#sign-up .submit a {
+}
+#sign-in li.button,
+#sign-up [type="button"] {
+	background: #007e8f;
+	border: 0;
+	color: white;
+	padding: 1em 2em;
 }
